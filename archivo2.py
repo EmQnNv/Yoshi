@@ -37,31 +37,44 @@
 # else:
 #     print("pusiste mal ambos")
 
-ingreso = int(input("Pon tus ingresos"))
-if ingreso <500000:
-    print("no es suficiente")
-elif ingreso >=500000 and ingreso <=1000000:
-    credito = 300000
-elif ingreso >=1000000 and ingreso <=1500000:
-    credito = 650000
-elif ingreso >=1500001:
-    credito = 1000000
+# ingreso = int(input("Pon tus ingresos"))
+# if ingreso <500000:
+#     print("no es suficiente")
+# elif ingreso >=500000 and ingreso <=1000000:
+#     credito = 300000
+# elif ingreso >=1000000 and ingreso <=1500000:
+#     credito = 650000
+# elif ingreso >=1500001:
+#     credito = 1000000
 
-educacion = input("cual educacion tienes? Basico, Medio o Superior")
-if educacion == "Basico" or educacion == "basico" or educacion == "basica" or educacion == "Basica":
-   credito = credito*1
-elif educacion == "medio" or educacion == "Medio" or educacion == "Media" or educacion == "media":
-    credito = credito*1.3
-elif educacion == "superior" or educacion == "Superior":
-    credito = credito*1.5
-else:
-    print("invalido")
-nacion = input("cual es tu nacionalidad? Chilena o Extranjero?")
-if nacion == "chile" or nacion == "chilena" or nacion =="Chile" or nacion =="Chilena" or nacion =="Chileno" or nacion == "chileno":
-    credito = credito+300000
-elif nacion == "extranjero" or nacion =="extranjera" or nacion =="Extranjero" or nacion=="Extranjera":
-    credito =credito+0
-else:
-    print("invalido")
+# educacion = input("cual educacion tienes? Basico, Medio o Superior")
+# if educacion == "Basico" or educacion == "basico" or educacion == "basica" or educacion == "Basica":
+#    credito = credito*1
+# elif educacion == "medio" or educacion == "Medio" or educacion == "Media" or educacion == "media":
+#     credito = credito*1.3
+# elif educacion == "superior" or educacion == "Superior":
+#     credito = credito*1.5
+# else:
+#     print("invalido")
+# nacion = input("cual es tu nacionalidad? Chilena o Extranjero?")
+# if nacion == "chile" or nacion == "chilena" or nacion =="Chile" or nacion =="Chilena" or nacion =="Chileno" or nacion == "chileno":
+#     credito = credito+300000
+# elif nacion == "extranjero" or nacion =="extranjera" or nacion =="Extranjero" or nacion=="Extranjera":
+#     credito =credito+0
+# else:
+#     print("invalido")
 
-print(credito)
+# print(credito)
+
+print("escribe 3 num")
+n1 = input()
+n2 = input()
+n3 = input()
+
+
+if n1> n2 and n1>n3:
+    print(n1, "es mayor")
+elif n2> n1 and n2>n3:
+    print(n2, "es mayor")
+elif n3>n1 and n3>n2:
+    print(n3, "es mayor")
