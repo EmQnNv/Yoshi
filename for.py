@@ -88,16 +88,23 @@
 #de notas
 #saca el promedio y si aprueba o no
 
-alumn = int(input("ingresa la cant de alumnos")) #me dio error aca???
+alumn = int(input("Cuantos alumnos son?"))
 cant = 0
-notas = 0
-for i in range(alumn):
-    print("notas de alumno", i+1)
-   
-    cant = int(input("cual es la cantidad de notas?"))
-    for i in range(cant):
-        notas1 = int(input())
-        notas2 = int(input())
-        notas3 = int(input())
+suma = 0
 
+for i in range(alumn):
+    print("Notas de alumno", i+1)
+    division = 0
+    print("ingresa cuantas notas vas a usar")
+    cant = int(input())
+    print("ingresa tus notas")
+    for t in range(cant):
+        nota = float(input())
+        suma+=nota
+        division+=1
+    print("su promedio es", suma/division)        
+    
+
+
+    
 print(notas1)
